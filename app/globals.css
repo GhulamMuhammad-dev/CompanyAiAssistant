@@ -43,3 +43,21 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #4b5563 transparent;
 }
+
+.chat-message {
+  transition: background 0.2s ease;
+}
+
+.chat-message.user:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+.chat-message.assistant:hover {
+  background-color: #3a3a3a;
+}
+
+/* Responsive text limit */
+@media (min-width: 640px) {
+  .chat-message {
+    max-width: 75%;
+  }
+}
