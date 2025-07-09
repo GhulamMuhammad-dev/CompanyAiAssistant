@@ -1,0 +1,53 @@
+[
+  {
+    "category": "Appetizers",
+    "items": [
+      { "name": "Garlic Bread", "price": 4.99 },
+      { "name": "Mozzarella Sticks", "price": 6.99 },
+      { "name": "Chicken Wings (6 pcs)", "price": 8.49 }
+    ]
+  },
+  {
+    "category": "Salads",
+    "items": [
+      { "name": "Caesar Salad", "price": 7.99 },
+      { "name": "Greek Salad", "price": 8.49 },
+      { "name": "Garden Fresh Salad", "price": 6.99 }
+    ]
+  },
+  {
+    "category": "Main Course",
+    "items": [
+      { "name": "Grilled Chicken Breast", "price": 13.99 },
+      { "name": "Beef Burger with Fries", "price": 11.49 },
+      { "name": "Spaghetti Bolognese", "price": 12.99 },
+      { "name": "Veggie Lasagna", "price": 11.99 }
+    ]
+  },
+  {
+    "category": "Pizzas",
+    "items": [
+      { "name": "Margherita", "price": 9.99 },
+      { "name": "Pepperoni", "price": 11.99 },
+      { "name": "BBQ Chicken", "price": 12.49 },
+      { "name": "Veggie Delight", "price": 10.99 }
+    ]
+  },
+  {
+    "category": "Desserts",
+    "items": [
+      { "name": "Chocolate Lava Cake", "price": 6.49 },
+      { "name": "Vanilla Ice Cream", "price": 4.49 },
+      { "name": "Cheesecake", "price": 5.99 }
+    ]
+  },
+  {
+    "category": "Beverages",
+    "items": [
+      { "name": "Coca-Cola (Can)", "price": 1.99 },
+      { "name": "Fresh Orange Juice", "price": 3.99 },
+      { "name": "Mineral Water", "price": 1.49 },
+      { "name": "Cappuccino", "price": 3.49 }
+    ]
+  }
+]
