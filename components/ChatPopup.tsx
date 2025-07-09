@@ -2,8 +2,9 @@
 
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
-import { PaperPlaneRight, Spinner, Robot, SpinnerBallIcon, RobotIcon } from "@phosphor-icons/react";
+import { SpinnerBallIcon, RobotIcon } from "@phosphor-icons/react";
 import ReactMarkdown from "react-markdown";
+import { PaperPlaneRightIcon, SpiralIcon } from "@phosphor-icons/react/dist/ssr";
 
 // Message type
 type Message = {
@@ -32,7 +33,7 @@ export default function ChatPopup() {
         },
       ]);
     }
-  }, [isOpen]);
+  }, [isOpen, messages.length]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -67,7 +68,7 @@ export default function ChatPopup() {
         {
           id: Date.now().toString(),
           content:
-            "Sorry, I encountered an error. Please try again or contact foundlabs.online@gmail.com",
+            `Sorry, I encountered an error. Please try again or contact foundlabs.online@gmail.com ${error}`,
           role: "assistant",
           timestamp: new Date(),
         },
@@ -172,9 +173,9 @@ export default function ChatPopup() {
                   className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl p-2 flex items-center justify-center disabled:opacity-50"
                 >
                   {isLoading ? (
-                    <Spinner size={18} className="animate-spin" />
+                    <SpiralIcon size={18} className="animate-spin" />
                   ) : (
-                    <PaperPlaneRight size={18} />
+                    <PaperPlaneRightIcon fill="true" size={18} />
                   )}
                 </button>
               </div>
@@ -188,7 +189,7 @@ export default function ChatPopup() {
             onClick={() => setIsOpen(true)}
             className="bg-blue-600 hover:bg-blue-700 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg animate-fade-in"
           >
-            <Robot size={28} />
+            <RobotIcon fill="true" size={28} />
           </button>
         )}
       </div>
