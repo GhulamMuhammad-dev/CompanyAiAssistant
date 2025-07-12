@@ -1,12 +1,5 @@
-import ChatPopup from "@/components/ChatPopup";
-
+import LandingPage from "@/components/LandingPage";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-4 md:p-24">
-      <div className="h-screen w-full bg-black">
-       <ChatPopup />
-      </div>
-    </main>
-  );
+  return <LandingPage />;
 }
